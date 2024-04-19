@@ -1,5 +1,5 @@
 body {
-    background-image: url('images/aurora-sky.jpeg');
+    background-image: url('images/aurora.png');
     background-size: 100vw 100vh;
     }
 
@@ -7,7 +7,7 @@ body {
         color: #ffffff;
         font-weight: 400;
         line-height: 1.5;
-        margin: 0 0 10rem 0; /* rem */
+        margin: 0 0 10rem 0; 
         letter-spacing: 0.1rem;
         font-family: Arial, sans-serif;
         font-size: 2.15rem;
@@ -15,31 +15,31 @@ body {
         letter-spacing: 0.5rem;
         padding-top: 28px;
         padding-bottom: 28px;
-        border-top: solid 2px #ffffff;
-        border-bottom: solid 2px #ffffff;
-        position: relative; /* Add position relative to the h1 */
+        border-top: solid 1px #ffffff;
+        border-bottom: solid 1px #ffffff;
+        position: relative; 
     }
-
+    
     
     h1::before {
     content: "";
     position: absolute;
-    top: 101px; /* Position at the top */   
-    width: 2px; /* Adjust thickness of the line */
-    height: 100%; /* Extend the line to cover the height of h1 */
-    background-color: #ffffff; /* Color of the line */   
-    right: 50%;
-    }
+    top: 101px;
+    height: 100%;
+    width: 1px;
+    background-color: #ffffff;
+    left:  307px; /* Adjusted to be outside the h1 element */
+}
 
-    h1::after {
-        content: "";
-        position: absolute;
-        bottom: 101px; /* Position at the bottom */
-        width: 2px; /* Adjust thickness of the line */
-        height: 100%; /* Extend the line to cover the height of h1 */
-        background-color: #ffffff; /* Color of the line */
-        left: 49.70%;
-    }
+h1::after {
+    content: "";
+    position: absolute;
+    bottom: 101px;
+    height: 100%;
+    width: 1px;
+    background-color: #ffffff;
+    right: 297px; /* Adjusted to be outside the h1 element */
+}
     
 
 .center-container {
@@ -49,7 +49,7 @@ body {
     height: 100vh; 
   }
 
-  .text {
+  .content {
     text-align: center;
   }
   
