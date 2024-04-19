@@ -111,8 +111,25 @@ main {
     height: 20%; /* no scrolling */
 }
 
-article img {
+article {
     display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    max-width: 400px; /* STOPPED HERE
+    z-index: 1000; /* Ensure the article appears above other content */
+    overflow: hidden;
+    box-sizing: border-box; /* Include padding in the width and height */
+}
+
+article img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+article.show-article {
+    display: block; /* Show the article when it has the 'show-article' class */
 }
 
 
