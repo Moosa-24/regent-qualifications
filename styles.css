@@ -111,6 +111,11 @@ main {
     height: 20%; /* no scrolling */
 }
 
+article img {
+    display: none;
+}
+
+
 footer {
     flex-shrink: 0; /* Prevent footer from shrinking */
     height: 10%;
