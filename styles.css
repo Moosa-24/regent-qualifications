@@ -25,11 +25,11 @@ body {/* BACKGROUND*/
 
 .logo {
     position: absolute; /* Position the image */
-    top: 14%; /* Move it vertically to the center */
-    left: 49.72%; /* Move it horizontally to the center */
+    top: 13%; /* Move it vertically to the center */
+    left: 49.69%; /* Move it horizontally to the center */
     transform: translate(-50%, -50%); /* Center it precisely */
-    height: 80px; /* Adjust height as needed */
-    width: 80px; /* Adjust width as needed */
+    height: 130px; /* Adjust height as needed */
+    width: 130px; /* Adjust width as needed */
     border-radius: 50%; /* Make the image appear as a circle */
     filter: brightness(0) invert(1);
     }
@@ -75,10 +75,10 @@ h1::after {
 /* CIRCLE*/
 .h1-extra-line {
     position: absolute;
-    top: 8.45%;
-    transform: translateX(-5%);
-    height: 80px;
-    width: 80px;
+    top: 6.35%;
+    transform: translateX(-10%);
+    height: 95px;
+    width: 95px;
     border-radius: 50%;
     border: 1px solid #ffffff; /* Add border instead of background-color */
     box-sizing: border-box; /* Ensure the border is included in the dimensions */
