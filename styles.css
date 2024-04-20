@@ -116,7 +116,7 @@ article {
     position: fixed;
     top: 0;
     left: 0;
-    max-width: 400px; /* STOPPED HERE
+    max-width: 400px; /* STOPPED  FOR IMAGES*/
     z-index: 1000; /* Ensure the article appears above other content */
     overflow: hidden;
     box-sizing: border-box; /* Include padding in the width and height */
@@ -131,6 +131,28 @@ article img {
 article.show-article {
     display: block; /* Show the article when it has the 'show-article' class */
 }
+
+/* Close button styles */
+.close-button {
+    display: none; /* Hide the close button by default */
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    z-index: 9999;
+    background-color: #fff; /* Background color */
+    color: #000; /* Text color */
+    border: 1px solid #000; /* Border */
+    padding: 5px 10px; /* Padding */
+    border-radius: 5px; /* Border radius */
+    font-size: 16px; /* Font size */
+}
+
+.close-button:hover {
+    background-color: #000; /* Hover background color */
+    color: #fff; /* Hover text color */
+}
+
 
 
 footer {
