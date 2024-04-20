@@ -48,8 +48,21 @@ top: 155px;
 height: 143.5%;
 width: 1px;
 background-color: #ffffff;
-left:  307px; /* Adjusted to be outside the h1 element */
+left:  302px; /* Adjusted to be outside the h1 element */
 }
+
+.logo {
+    position: absolute; /* Position the image */
+    top: 14%; /* Move it vertically to the center */
+    left: 50%; /* Move it horizontally to the center */
+    transform: translate(-50%, -50%); /* Center it precisely */
+    height: 80px; /* Adjust height as needed */
+    width: 80px; /* Adjust width as needed */
+    border-radius: 50%; /* Make the image appear as a circle */
+    filter: brightness(0) invert(1);
+  }
+  
+  
 
 h1::after {
     content: "";
@@ -58,14 +71,14 @@ h1::after {
     height: 26%;
     width: 1px;
     background-color: #ffffff;
-    right: 304px; /* Adjusted to be outside the h1 element */
+    right: 302px; /* Adjusted to be outside the h1 element */
 }
 
 /* CIRCLE*/
 .h1-extra-line {
     position: absolute;
-    top: 14%;
-    transform: translateY(-50%);
+    top: 8.45%;
+    transform: translateX(0%);
     height: 80px;
     width: 80px;
     border-radius: 50%;
@@ -74,7 +87,7 @@ h1::after {
 }
 
 .h1-extra-line.circle {
-    left: 47.45%;
+    left: 47.34%;
     right: 0%;
 }
 
