@@ -23,6 +23,17 @@ body {/* BACKGROUND*/
         background-color: rgba(0, 0, 0, 0.4); /* Adjust the alpha value (last parameter) to control the darkness */
     }
 
+.logo {
+    position: absolute; /* Position the image */
+    top: 14%; /* Move it vertically to the center */
+    left: 49.72%; /* Move it horizontally to the center */
+    transform: translate(-50%, -50%); /* Center it precisely */
+    height: 80px; /* Adjust height as needed */
+    width: 80px; /* Adjust width as needed */
+    border-radius: 50%; /* Make the image appear as a circle */
+    filter: brightness(0) invert(1);
+    }
+
 h1 {
     color: #ffffff;
     font-weight: 400;
@@ -48,22 +59,9 @@ top: 155px;
 height: 143.5%;
 width: 1px;
 background-color: #ffffff;
-left:  302px; /* Adjusted to be outside the h1 element */
+left:  297px; /* Adjusted to be outside the h1 element */
 }
-
-.logo {
-    position: absolute; /* Position the image */
-    top: 14%; /* Move it vertically to the center */
-    left: 50%; /* Move it horizontally to the center */
-    transform: translate(-50%, -50%); /* Center it precisely */
-    height: 80px; /* Adjust height as needed */
-    width: 80px; /* Adjust width as needed */
-    border-radius: 50%; /* Make the image appear as a circle */
-    filter: brightness(0) invert(1);
-  }
   
-  
-
 h1::after {
     content: "";
     position: absolute;
@@ -71,14 +69,14 @@ h1::after {
     height: 26%;
     width: 1px;
     background-color: #ffffff;
-    right: 302px; /* Adjusted to be outside the h1 element */
+    right: 306px; /* Adjusted to be outside the h1 element */
 }
 
 /* CIRCLE*/
 .h1-extra-line {
     position: absolute;
     top: 8.45%;
-    transform: translateX(0%);
+    transform: translateX(-5%);
     height: 80px;
     width: 80px;
     border-radius: 50%;
@@ -95,7 +93,7 @@ h1::after {
 .nav {
     color: #ffffff;
     font-weight: 400;
-    margin: 6.2rem 0 0 0;
+    margin: 0 0 0 0;
     letter-spacing: 0.1rem;
     font-family: Arial, sans-serif;
     font-size: 1rem;
@@ -121,7 +119,7 @@ nav::before {
     height: 100%;
     width: 1px;
     background-color: #ffffff;
-    left:  307px; /* Adjusted to be outside the nav element */
+    left:  301px; /* Adjusted to be outside the nav element */
     }
     
 nav::after {
@@ -131,7 +129,7 @@ nav::after {
     height: 100%;
     width: 1px;
     background-color: #ffffff;
-    right: 310px; /* Adjusted to be outside the nav element */
+    right: 311px; /* Adjusted to be outside the nav element */
     }
 
     .nav-extra-line {
@@ -147,7 +145,6 @@ nav::after {
         left: 0%; /* Adjust the left position */
         right: 0%; /* Adjust the right position */
     }
-      
 
 .center-container {
     display: flex;
@@ -161,27 +158,45 @@ nav::after {
   .content {
     text-align: center;
   }
+
+  /* Apply hover effect to the 25% of horizontal-list */
   
-  .horizontal-list {
-    list-style: none; /* Removes default bullet points */
+/* Remove the styles for list items and anchor tags */
+.horizontal-list {
     padding: 0;
     margin: center;
     display: flex;
     justify-content: space-between; /* Distribute items evenly along the main axis */
 }
 
-.horizontal-list li {
-    flex: 1; /* Equal width for each item */
-    margin-right: 10px; /* Add space between items if needed */
-    text-align: center; /* Center align the text */
+/* Apply hover effect to the 25% of horizontal-list */
+.horizontal-list button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #ffffff; /* Text color */
+    font-size: .9rem; /* Font size */
+    font-weight: 400; /* Font weight */
+    margin-right: 10px;
+    margin-top: -12px;
+    margin-bottom: 0px; /* Add space between buttons */
+    text-decoration: none; /* Remove underline */
+    padding: 0; /* Remove padding */
+    width: 296px; /* Set width */
+    height: 53.6px; /* Set height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box; /* Include padding and border in the width and height */
+    transition: background-color 0.3s ease; /* Smooth transition effect */
 }
 
-.horizontal-list li a {
-    text-decoration: none; /* Remove underline from links */
+/* Apply hover effect */
+.horizontal-list button:hover {
+    background-color: rgba(255, 255, 255, 0.075); /* Slightly change background color on hover */
 }
 
 
-  
 h2 {
         color: #ffffff;
 		font-size: 0.6rem;
@@ -230,8 +245,8 @@ main {
 article {
     display: none;
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 30%;
+    left: 37%;
     max-width: 400px; /* STOPPED  FOR IMAGES*/
     z-index: 1000; /* Ensure the article appears above other content */
     overflow: hidden;
@@ -247,6 +262,11 @@ article img {
 article.show-article {
     display: block; /* Show the article when it has the 'show-article' class */
 }
+
+article:hover {
+    cursor: pointer; /* Change cursor on hover */
+  }
+  
 
 /* CLOSE BUTTON - RESTYLE */
 .close-button {

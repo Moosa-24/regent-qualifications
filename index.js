@@ -36,17 +36,17 @@ function closeImageViewer() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Get all navigation links
-    let navLinks = document.querySelectorAll('.nav a');
+    // Get all navigation buttons
+    let navButtons = document.querySelectorAll('.nav button');
 
-    // Add click event listeners to all navigation links
-    navLinks.forEach(function(link) {
-        link.addEventListener('click', function(event) {
-            // Prevent the default link behavior
+    // Add click event listeners to all navigation buttons
+    navButtons.forEach(function(button) {
+        button.addEventListener('click', function(event) {
+            // Prevent the default button behavior
             event.preventDefault();
             
-            // Get the target article's ID from the link's href attribute
-            let targetId = this.getAttribute('href').substring(1);
+            // Get the target article's ID from the button's onclick attribute
+            let targetId = this.getAttribute('onclick').match(/#(\w+)/)[1];
             let targetArticle = document.getElementById(targetId);
 
             // If the target article exists, toggle its visibility
@@ -56,15 +56,9 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Check if the page is accessed via a link with an anchor
-    if (window.location.hash) {
-        // Get the ID of the article specified in the anchor
-        let articleId = window.location.hash.substring(1);
-        let article = document.getElementById(articleId);
-        
-        // If the article exists, toggle its visibility
-        if (article) {
-            toggleArticleVisibility(article);
-        }
-    }
+    // Add click event listener to the close buttons
+    let closeButtons = document.querySelectorAll('.close-button');
+    closeButtons.forEach(function(button) {
+        button.addEventListener('click', closeImageViewer);
+    });
 });
