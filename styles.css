@@ -26,14 +26,15 @@ h1 {
     border-top: solid 1px #ffffff;
     border-bottom: solid 1px #ffffff;
     position: relative; 
-    margin-bottom: 60px;
+    margin-bottom: 40px;
+    margin-top: 40px;
 }
     
 h1::before {
 content: "";
 position: absolute;
 top: 101px;
-height: 230%;
+height: 290%;
 width: 1px;
 background-color: #ffffff;
 left:  307px; /* Adjusted to be outside the h1 element */
@@ -67,7 +68,7 @@ h1::after {
     border-radius: 5px;
     position: relative; 
     width: 80vw;
-    margin-top: 50px;
+    margin-top: 130px;
     height:13%
 }
 /* NAV - THE 25% LINES*/
@@ -232,5 +233,5 @@ footer {
     flex-shrink: 0; /* Prevent footer from shrinking */
     height: 10%;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 130px;
 }
