@@ -10,6 +10,17 @@ body {/* BACKGROUND*/
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4); /* Adjust the alpha value (last parameter) to control the darkness */
     }
 
 h1 {
@@ -47,7 +58,7 @@ h1::after {
     height: 100%;
     width: 1px;
     background-color: #ffffff;
-    right: 297px; /* Adjusted to be outside the h1 element */
+    right: 304px; /* Adjusted to be outside the h1 element */
 }
 
 .nav {
