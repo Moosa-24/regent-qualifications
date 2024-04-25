@@ -245,12 +245,13 @@ main {
 article {
     display: none;
     position: fixed;
-    top: 30%;
-    left: 37%;
-    max-width: 400px; /* STOPPED  FOR IMAGES*/
-    z-index: 1000; /* Ensure the article appears above other content */
+    top: 25%;
+    left: 30.5%;
+    max-width: 600px;
+    z-index: 1000;
     overflow: hidden;
-    box-sizing: border-box; /* Include padding in the width and height */
+    box-sizing: border-box;
+    transition: opacity 0.3s ease, transform 0.4s ease; /* Change transition property */
 }
 
 article img {
@@ -260,39 +261,41 @@ article img {
 }
 
 article.show-article {
-    display: block; /* Show the article when it has the 'show-article' class */
+    display: block;
+    opacity: 1;
+    transform: scale(1); /* Use transform for animation */
 }
 
 article:hover {
-    cursor: pointer; /* Change cursor on hover */
-  }
-  
+    cursor: pointer;
+    transform: scale(0.95); /* Use transform for animation */
+}
 
 /* CLOSE BUTTON - RESTYLE */
 .close-button {
-    display: none; /* Hide the close button by default */
+    display: none;
     position: fixed;
     top: 10px;
     right: 10px;
     cursor: pointer;
     z-index: 9999;
-    background-color: #fff; /* Background color */
-    color: #000; /* Text color */
-    border: 1px solid #000; /* Border */
-    padding: 5px 10px; /* Padding */
-    border-radius: 5px; /* Border radius */
-    font-size: 16px; /* Font size */
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Add transition properties */
 }
 
 .close-button:hover {
-    background-color: #000; /* Hover background color */
-    color: #fff; /* Hover text color */
+    background-color: goldenrod;
+    color: #fff;
 }
-
 
 /* FOOTER */
 footer {
-    flex-shrink: 0; /* Prevent footer from shrinking */
+    flex-shrink: 0;
     height: 10%;
     text-align: center;
     margin-top: 130px;
