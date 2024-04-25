@@ -1,4 +1,5 @@
-body {/* BACKGROUND*/
+body {
+    /* BACKGROUND */
     background-image: url('images/Sand-Dunes-Wallpaper.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -11,28 +12,28 @@ body {/* BACKGROUND*/
     display: flex;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.5);
-    }
+}
 
-    body::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.4); /* Adjust the alpha value (last parameter) to control the darkness */
-    }
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Adjust the alpha value (last parameter) to control the darkness */
+}
 
 .logo {
     position: absolute; /* Position the image */
     top: 13%; /* Move it vertically to the center */
-    left: 49.69%; /* Move it horizontally to the center */
+    left: 50%; /* Move it horizontally to the center */
     transform: translate(-50%, -50%); /* Center it precisely */
-    height: 130px; /* Adjust height as needed */
-    width: 130px; /* Adjust width as needed */
+    height: 9.5%; /* Adjust height as needed */
+    width: 9.5%; /* Adjust width as needed */
     border-radius: 50%; /* Make the image appear as a circle */
     filter: brightness(0) invert(1);
-    }
+}
 
 h1 {
     color: #ffffff;
@@ -43,33 +44,33 @@ h1 {
     font-size: 2.15rem;
     line-height: 1.3;
     letter-spacing: 0.5rem;
-    padding-top: 55px;
-    padding-bottom: 55px;
-    border-top: solid 1px #ffffff;
-    border-bottom: solid 1px #ffffff;
+    padding-top: 3.5%;
+    padding-bottom: 3.5%;
+    border-top: solid 0.1%;
+    border-bottom: solid 0.1%;
     position: relative; 
-    margin-bottom: 40px;
-    margin-top: 105px;
+    margin-bottom: 2.67%;
+    margin-top: 7%; /* Adjusted for responsiveness */
 }
     
 h1::before {
-content: "";
-position: absolute;
-top: 155px;
-height: 143.5%;
-width: 1px;
-background-color: #ffffff;
-left:  297px; /* Adjusted to be outside the h1 element */
+    content: "";
+    position: absolute;
+    top: 5.77%;
+    height: 143.5%;
+    width: 0.17%;
+    background-color: #ffffff;
+    left:  49.5%; /* Adjusted to be outside the h1 element */
 }
   
 h1::after {
     content: "";
     position: absolute;
-    bottom: 155px;
-    height: 26%;
-    width: 1px;
+    bottom: 5.77%;
+    height: 1.3%;
+    width: 0.17%;
     background-color: #ffffff;
-    right: 306px; /* Adjusted to be outside the h1 element */
+    right: 50%; /* Adjusted to be outside the h1 element */
 }
 
 /* CIRCLE*/
@@ -77,10 +78,10 @@ h1::after {
     position: absolute;
     top: 6.35%;
     transform: translateX(-10%);
-    height: 95px;
-    width: 95px;
+    height: 4.98%;
+    width: 4.98%;
     border-radius: 50%;
-    border: 1px solid #ffffff; /* Add border instead of background-color */
+    border: 0.1% solid #ffffff; /* Add border instead of background-color */
     box-sizing: border-box; /* Ensure the border is included in the dimensions */
 }
 
@@ -89,62 +90,62 @@ h1::after {
     right: 0%;
 }
 
-
 .nav {
     color: #ffffff;
     font-weight: 400;
-    margin: 0 0 0 0;
+    margin: 0;
     letter-spacing: 0.1rem;
     font-family: Arial, sans-serif;
     font-size: 1rem;
     line-height: 1;
     letter-spacing: 0.2rem;
     padding-top: 0px;
-    padding-bottom: 28px;
-    border-top: solid 1px #ffffff;
-    border-bottom: solid 1px #ffffff;
-    border-left: solid 1px #ffffff;
-    border-right: solid 1px #ffffff;
+    padding-bottom: 1.87%;
+    border-top: solid 0.1%;
+    border-bottom: solid 0.1%;
+    border-left: solid 0.1%;
+    border-right: solid 0.1%;
     border-radius: 5px;
     position: relative; 
     width: 80vw;
-    margin-top: 60px;
-    height:13%
+    margin-top: 4.26%; /* Adjusted for responsiveness */
+    height: 13%
 }
+
 /* NAV - THE 25% LINES*/
 nav::before {
     content: "";
     position: absolute;
-    top: 0px;
+    top: 0;
     height: 100%;
-    width: 1px;
+    width: 0.17%;
     background-color: #ffffff;
-    left:  301px; /* Adjusted to be outside the nav element */
-    }
-    
+    left:  50%; /* Adjusted to be outside the nav element */
+}
+
 nav::after {
     content: "";
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     height: 100%;
-    width: 1px;
+    width: 0.17%;
     background-color: #ffffff;
-    right: 311px; /* Adjusted to be outside the nav element */
-    }
+    right: 50%; /* Adjusted to be outside the nav element */
+}
 
-    .nav-extra-line {
-        position: absolute; /* Position relative to the parent */
-        top: 50%; /* Position in the middle vertically */
-        transform: translateY(-50%); /* Adjust vertically to the middle */
-        height: 1px; /* Height of the line */
-        background-color: #ffffff; /* Color of the line */
-    }
-    
-    /* To translate the line horizontally */
-    .nav-extra-line.horizontal {
-        left: 0%; /* Adjust the left position */
-        right: 0%; /* Adjust the right position */
-    }
+.nav-extra-line {
+    position: absolute; /* Position relative to the parent */
+    top: 50%; /* Position in the middle vertically */
+    transform: translateY(-50%); /* Adjust vertically to the middle */
+    height: 0.1%; /* Height of the line */
+    background-color: #ffffff; /* Color of the line */
+}
+
+/* To translate the line horizontally */
+.nav-extra-line.horizontal {
+    left: 0; /* Adjust the left position */
+    right: 0; /* Adjust the right position */
+}
 
 .center-container {
     display: flex;
@@ -152,15 +153,14 @@ nav::after {
     align-items: center;
     height: 100vh; 
     flex-direction: column;
-    margin-top: -40px;
-  }
+    margin-top: -4%; /* Adjusted for responsiveness */
+}
 
-  .content {
+.content {
     text-align: center;
-  }
+}
 
-  /* Apply hover effect to the 25% of horizontal-list */
-  
+/* Apply hover effect to the 25% of horizontal-list */
 /* Remove the styles for list items and anchor tags */
 .horizontal-list {
     padding: 0;
@@ -175,15 +175,15 @@ nav::after {
     border: none;
     cursor: pointer;
     color: #ffffff; /* Text color */
-    font-size: .9rem; /* Font size */
+    font-size: 0.9rem; /* Font size */
     font-weight: 400; /* Font weight */
-    margin-right: 10px;
-    margin-top: -12px;
+    margin-right: 1.33%; /* Adjusted for responsiveness */
+    margin-top: -0.96%;
     margin-bottom: 0px; /* Add space between buttons */
     text-decoration: none; /* Remove underline */
     padding: 0; /* Remove padding */
-    width: 296px; /* Set width */
-    height: 53.6px; /* Set height */
+    width: 36.2%; /* Adjusted for responsiveness */
+    height: 6.08%; /* Adjusted for responsiveness */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -196,27 +196,26 @@ nav::after {
     background-color: rgba(255, 255, 255, 0.075); /* Slightly change background color on hover */
 }
 
-
 h2 {
-        color: #ffffff;
-		font-size: 0.6rem;
-		line-height: 1.4;
-		letter-spacing: 0.5rem;
-        font-weight: 300;
-        font-family: Arial, sans-serif;
-	}
+    color: #ffffff;
+    font-size: 0.6rem;
+    line-height: 1.4;
+    letter-spacing: 0.5rem;
+    font-weight: 300;
+    font-family: Arial, sans-serif;
+}
 
 footer p.link {
-		letter-spacing: 0.2rem;
-		font-size: 0.6rem;
-		opacity: 0.75;			
-        margin-bottom: 0;
-		text-transform: uppercase;
-		}
+    letter-spacing: 0.2rem;
+    font-size: 0.6rem;
+    opacity: 0.75;           
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
 
-        a {
-            color: #ffffff;
-        }
+a {
+    color: #ffffff;
+}
 
 /* ensure that the content does not exceed the height of my laptop's viewport(will change to fit different devices later)*/
 
@@ -275,16 +274,16 @@ article:hover {
 .close-button {
     display: none;
     position: fixed;
-    top: 10px;
-    right: 10px;
+    top: 1.33%;
+    right: 1.33%;
     cursor: pointer;
     z-index: 9999;
     background-color: #fff;
     color: #000;
-    border: 1px solid #000;
-    padding: 5px 10px;
+    border: 0.1% solid #000;
+    padding: 0.3% 0.67%;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 1.07vw; /* Adjusted for responsiveness */
     transition: background-color 0.3s ease, color 0.3s ease; /* Add transition properties */
 }
 
@@ -298,5 +297,5 @@ footer {
     flex-shrink: 0;
     height: 10%;
     text-align: center;
-    margin-top: 130px;
+    margin-top: 6.67%; /* Adjusted for responsiveness */
 }
