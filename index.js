@@ -8,8 +8,11 @@ function toggleArticleVisibility(article) {
         article.classList.remove('show-article');
     });
     
-    // Show the clicked article
-    article.classList.toggle('show-article');
+    // Add a delay before showing the clicked article to ensure the transition effect
+    setTimeout(function() {
+        // Show the clicked article
+        article.classList.toggle('show-article');
+    }, 50);
 
     // Show the close button for the clicked article
     let closeButton = article.querySelector('.close-button');
