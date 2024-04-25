@@ -114,20 +114,19 @@ nav::before {
     content: "";
     position: absolute;
     top: 0%; /* Adjusted to be in the middle of the nav element */
-    left: 24.8%;
+    left: 24.8%; /* Adjusted to stay within the nav bar */
     width: 10%;
     height: 0.8%; /* Change width to height for horizontal line */
     background-color: #ffffff;
     transform-origin: left center; /* Set the transform origin to the left center */
     transform: translateY(-50%) rotate(90deg); /* Rotate the element 90 degrees clockwise */
 }
-
 
 nav::after {
     content: "";
     position: absolute;
-    bottom: 100%; /* Adjusted to be in the middle of the nav element */
-    right: 15.5%;
+    top: 0%; /* Adjusted to be in the middle of the nav element */
+    right: 15.5%; /* Adjusted to stay within the nav bar */
     width: 10%;
     height: 0.8%; /* Change width to height for horizontal line */
     background-color: #ffffff;
@@ -135,7 +134,7 @@ nav::after {
     transform: translateY(-50%) rotate(90deg); /* Rotate the element 90 degrees clockwise */
 }
 
-
+/* CIRCLE*/
 .nav-extra-line {
     position: absolute; /* Position relative to the parent */
     top: 50%; /* Position in the middle vertically */
