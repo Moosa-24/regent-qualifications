@@ -12,14 +12,15 @@ function toggleArticleVisibility(article) {
     setTimeout(function() {
         // Show the clicked article
         article.classList.toggle('show-article');
-    }, 50);
 
-    // Show the close button for the clicked article
-    let closeButton = article.querySelector('.close-button');
-    if (closeButton) {
-        closeButton.style.display = 'block';
-    }
+        // Show the close button for the clicked article
+        let closeButton = article.querySelector('.close-button');
+        if (closeButton) {
+            closeButton.style.display = 'block';
+        }
+    }, 125); // 0.5 seconds delay (500 milliseconds)
 }
+
 
 // Function to close the image viewer
 function closeImageViewer() {
