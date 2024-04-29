@@ -220,6 +220,38 @@ article:hover {
     color: #fff;
 }
 
+
+/* Your existing CSS styles remain unchanged */
+
+/* Theme switcher button styles */
+.theme-switcher-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.theme-switcher-container button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    background-color: #fff; /* Set the initial background color */
+    color: #000; /* Set the initial text color */
+    cursor: pointer;
+}
+
+/* Styles for light theme */
+body.light {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Styles for dark theme */
+body.dark {
+    background-color: #000000;
+    text-emphasis-color: #ffffff;
+}
+
+
 /* Media queries for buttons */
 @media only screen and (max-width: 768px) {
     .horizontal-list button {

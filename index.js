@@ -66,3 +66,16 @@ document.addEventListener('DOMContentLoaded', function() {
         button.addEventListener('click', closeImageViewer);
     });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const themeSwitcher = document.getElementById('theme-switcher');
+
+    themeSwitcher.addEventListener('click', function() {
+        const body = document.body;
+
+        // Toggle between light and dark themes
+        body.classList.toggle('light');
+        body.classList.toggle('dark');
+    });
+});
+
