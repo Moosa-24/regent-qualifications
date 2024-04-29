@@ -67,15 +67,35 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-document.addEventListener("DOMContentLoaded", function() {
-    const themeSwitcher = document.getElementById('theme-switcher');
+// Create the SVG element
+const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+svg.setAttribute("width", "50");
+svg.setAttribute("height", "40");
+svg.style.border = "none";
+svg.style.zIndex = "2";
+svg.style.position = "absolute";
+svg.style.bottom = "45px";
+svg.style.borderRadius = "0 20px 20px 0";
+svg.style.backgroundColor = "red";
+svg.style.cursor = "pointer";
 
-    themeSwitcher.addEventListener('click', function() {
-        const body = document.body;
+// Create a text element inside the SVG for the emoji
+const text = document.createElementNS("http://www.w3.org/2000/svg", "text");
+text.setAttribute("x", "17");
+text.setAttribute("y", "23");
+text.setAttribute("font-size", "14");
+text.setAttribute("fill", "#828FA3");
+text.textContent = "⚡";
 
-        // Toggle between light and dark themes
-        body.classList.toggle('light');
-        body.classList.toggle('dark');
-    });
+// Append the text element to the SVG
+svg.appendChild(text);
+
+// Append the SVG to the document body
+document.body.appendChild(svg);
+svg.style.marginTop = "130px";
+
+// Add an event listener to the SVG to toggle the sidebar when clicked
+svg.addEventListener("click", function() {
+    //toggleSidebar(true); // Open the sidebar when clicked
+    svg.style.display = "none"; // Hide the SVG after clicking
 });
-
