@@ -67,6 +67,48 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+function toggleTheme() {
+    const body = document.body;
+    
+    if (body.classList.contains('light-theme')) {
+      body.classList.remove('light-theme');
+      body.classList.add('dark-theme');
+      svg.style.backgroundColor = "grey";
+      localStorage.setItem('theme', 'dark');
+    } else {
+      body.classList.remove('dark-theme');
+      body.classList.add('light-theme');
+      svg.style.backgroundColor = "#d18710";
+      localStorage.setItem('theme', 'light');
+    }
+  }
+
+  
+// Function to toggle the sidebar
+function toggleSidebar(open) {
+    const sidebar = document.querySelector('.sidebar');
+    if (open) {
+        sidebar.style.display = 'block';
+        svg.style.display = 'none';
+    } else {
+        sidebar.style.display = 'none';
+        svg.style.display = 'block';
+    }
+    console.log(sidebar);
+}
+
+// Get the close sidebar button
+const closeSidebarBtn = document.getElementById('closeSidebarBtn');
+
+// Function to close the sidebar
+function closeSidebar() {
+    sidebar.style.display = 'none'; // Hide the sidebar
+}
+
+// Add click event listener to the close sidebar button
+closeSidebarBtn.addEventListener('click', () => toggleSidebar(false));
+
+
 // Create the SVG element
 const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
 svg.setAttribute("width", "50");
@@ -76,7 +118,7 @@ svg.style.zIndex = "2";
 svg.style.position = "absolute";
 svg.style.bottom = "45px";
 svg.style.borderRadius = "0 20px 20px 0";
-svg.style.backgroundColor = "red";
+svg.style.backgroundColor = "grey";
 svg.style.cursor = "pointer";
 
 // Create a text element inside the SVG for the emoji
@@ -96,6 +138,6 @@ svg.style.marginTop = "130px";
 
 // Add an event listener to the SVG to toggle the sidebar when clicked
 svg.addEventListener("click", function() {
-    //toggleSidebar(true); // Open the sidebar when clicked
+    toggleSidebar(true); // Open the sidebar when clicked
     svg.style.display = "none"; // Hide the SVG after clicking
 });
