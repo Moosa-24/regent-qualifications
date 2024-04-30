@@ -73,13 +73,11 @@ function toggleTheme() {
     if (body.classList.contains('light-theme')) {
       body.classList.remove('light-theme');
       body.classList.add('dark-theme');
-      let sun = document.querySelector('.sun');
       svg.style.backgroundColor = "grey";
       localStorage.setItem('theme', 'dark');
     } else {
       body.classList.remove('dark-theme');
       body.classList.add('light-theme');
-      let moon = document.querySelector('.moon');
       svg.style.backgroundColor = "#d18710";
       localStorage.setItem('theme', 'light');
     }
