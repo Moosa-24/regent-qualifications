@@ -111,6 +111,7 @@ closeSidebarBtn.addEventListener('click', () => toggleSidebar(false));
 
 // Create the SVG element
 const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+svg.setAttribute("id", "toggleSidebarSvg"); // Added ID here
 svg.setAttribute("width", "50");
 svg.setAttribute("height", "40");
 svg.style.border = "none";
