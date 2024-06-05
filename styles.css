@@ -269,8 +269,8 @@ article:hover {
     right: 1.33%;
     cursor: pointer;
     z-index: 9999;
-    background-color: #fff;
-    color: #000;
+    background-color: white;
+    color: black;
     border: 0.1% solid #000;
     padding: 0.3% 0.67%;
     border-radius: 5px;
@@ -307,11 +307,6 @@ article:hover {
     background-color:saddlebrown;
 }
 
-.light-theme .close-button {
-    background-color: #fff;
-    color: #000;
-}
-
 .dark-theme {
     background-image: url('images/aurora-sky.jpeg');
     color: #ffffff;
@@ -319,11 +314,6 @@ article:hover {
 
 .dark-theme .sidebar {
     background-color: grey;
-}
-
-.dark-theme .close-button {
-    background-color: #222;
-    color: #fff;
 }
 
 /* theme btn & closesidebarbtn */
