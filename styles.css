@@ -295,6 +295,7 @@ article:hover {
     bottom: 0; /* Extend the sidebar to the bottom of the viewport */
     z-index: 100000; /* Ensure the sidebar appears above other content */
     display: none;
+    transition: all .5s ease;
 }
 
 /* Light Theme & Dark Theme */
