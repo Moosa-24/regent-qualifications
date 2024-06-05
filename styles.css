@@ -353,7 +353,7 @@ article:hover {
     .logo {
         /* Adjust logo styles for smaller screens */
         height: 15%;  
-        margin-left: 6.5%;                                            /* not working? */
+        margin-left: 5.8%;                                            /* not working? */
         transform: scaleX(3);
         transform: scaleY();
     }
