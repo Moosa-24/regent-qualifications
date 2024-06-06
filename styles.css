@@ -343,16 +343,16 @@ article:hover {
 
     .logo {
         /* Adjust logo styles for smaller screens */
-        height: 15%;  
-        margin-left: 5.8%;                                            /* not working? */
+        top:18%;
+        height: 15%;                                              /* not working? */
         transform: scaleX(3);
         transform: scaleY();
     }
 
     .h1-extra-line.circle {
         /* Adjust circle styles for smaller screens */
-        top: 13%;                                                  /* not working the way i want */
-        right: 37%;
+        top: 18%;                                                  /* not working the way i want */
+        right: 43%;
         transform: scaleX(3);
     }
 
@@ -379,12 +379,12 @@ article:hover {
 article.show-article {
     display: block;
     opacity: 1;
-    transform: scale(2); /* Use transform for animation */
-    margin-right: 25%;
-    margin-top: 25%;
+    transform: scale(2.4); /* Use transform for animation */
+    margin-right: 31%;
+    margin-top: 30%;
 }
 #toggleSidebarSvg {
-    margin: 0 0 123% 0;
+    margin: 0 0 113% 0;
 }
 .sidebar {
     width: 150px; 
